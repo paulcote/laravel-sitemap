@@ -37,7 +37,7 @@
         </news:publication>
         @endif
 
-        @if(isset($tag->news['publication_date'])
+        @if(isset($tag->news['publication_date']))
         <news:publication_date>
             {{$tag->news['publication_date']}}
         </news:publication_date>
