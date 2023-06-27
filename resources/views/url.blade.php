@@ -30,7 +30,7 @@
 
             @if(isset($tag->news['publication']['language']))
             <news:language>
-                {{$tag->news['publication']['name']}}
+                {{$tag->news['publication']['language']}}
             </news:language>
 
             @endif
@@ -45,7 +45,7 @@
 
         @if(isset($tag->news['title']))
         <news:title>
-            {{$tag->news['publication_date']}}
+            {{$tag->news['title']}}
         </news:title>
         @endif
 
