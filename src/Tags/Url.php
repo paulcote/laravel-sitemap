@@ -21,6 +21,8 @@ class Url extends Tag
 
     public string $changeFrequency;
 
+    public array $news = [];
+
     public float $priority = 0.8;
 
     /** @var \Spatie\Sitemap\Tags\Alternate[] */
@@ -61,6 +63,13 @@ class Url extends Tag
     public function setChangeFrequency(string $changeFrequency): static
     {
         $this->changeFrequency = $changeFrequency;
+
+        return $this;
+    }
+
+    public function setNews(array $news): static
+    {
+        $this->news = $news;
 
         return $this;
     }
